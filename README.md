@@ -1,6 +1,6 @@
-# Deep Residual Learning for Image Recognition
+# Deep Residual Networks
 
-By Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+By [Kaiming He](http://research.microsoft.com/en-us/um/people/kahe/), [Xiangyu Zhang](https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=en), [Shaoqing Ren](http://home.ustc.edu.cn/~sqren/), [Jian Sun](http://research.microsoft.com/en-us/people/jiansun/).
 
 Microsoft Research Asia (MSRA).
 
@@ -33,6 +33,7 @@ If you use these models in your research, please cite:
 	- Implementation of data augmentation might be different (see our paper about the data augmentation we used).
 	- Changes of mini-batch size should impact accuracy (we use a mini-batch of 256 images on 8 GPUs, that is, 32 images per GPU).
 0. In our BN layers, the provided mean and variance are strictly computed using average (**not** moving average) on a sufficiently large training batch after the training procedure. Using moving average might lead to different results.
+0. In the BN paper, the BN layer learns gamma/beta. To implement BN in this version of Caffe, we use its provided "batch_norm_layer" (which has no gamma/beta learned) followed by "scale_layer" (which learns gamma/beta).
 0. We use Caffe's implementation of SGD: W := momentum\*W + lr\*g. **If you want to port these models to other libraries (e.g., Torch), please pay careful attention to the possibly different implementation of SGD**: W := momentum\*W + (1-momentum)\*lr\*g, which changes the effective learning rates.
 	
 ### Results
@@ -41,6 +42,7 @@ If you use these models in your research, please cite:
 
 	model|top-1|top-5
 	:---:|:---:|:---:
+	[VGG-16](http://www.vlfeat.org/matconvnet/pretrained/)|[28.5%](http://www.vlfeat.org/matconvnet/pretrained/)|[9.9%](http://www.vlfeat.org/matconvnet/pretrained/)
 	ResNet-50|24.7%|7.8%
 	ResNet-101|23.6%|7.1%
 	ResNet-152|23.0%|6.7%
