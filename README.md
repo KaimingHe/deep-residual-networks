@@ -58,11 +58,14 @@ If you use these models in your research, please cite:
 	
 ### Downloads
 
-[OneDrive](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
+- [OneDrive](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
+- [BaiduYun](http://pan.baidu.com/s/1o7xQ8Ka)
 	
 ### Third-party Re-implementations
 
 Deep residual networks are very easy to implement and train. We recommend to see also the following third-party re-implementations and extensions:
 
-0. Torch, CIFAR-10, with ResNet-20 to ResNet-110: https://github.com/gcr/torch-residual-networks
-0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56: https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning 
+0. Torch, CIFAR-10, with ResNet-20 to ResNet-110:  
+	https://github.com/gcr/torch-residual-networks
+0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56:  
+	https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning 
