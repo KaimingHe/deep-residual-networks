@@ -8,6 +8,7 @@ Microsoft Research Asia (MSRA).
 0. [Introduction](#introduction)
 0. [Disclaimer and Known Issues](#disclaimer-and-known-issues)
 0. [Results](#results)
+0. [Download](#downloads)
 0. [Third-party Re-implementations](#third-party-re-implementations)
 
 ### Introduction
@@ -54,6 +55,10 @@ If you use these models in your research, please cite:
 	ResNet-50|22.9%|6.7%
 	ResNet-101|21.8%|6.1%
 	ResNet-152|21.4%|5.7%
+	
+### Downloads
+
+[OneDrive](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
 	
 ### Third-party Re-implementations
 
