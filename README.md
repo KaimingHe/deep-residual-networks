@@ -6,10 +6,10 @@ Microsoft Research Asia (MSRA).
 
 ### Table of Contents
 0. [Introduction](#introduction)
-0. [Disclaimer and Known Issues](#disclaimer-and-known-issues)
+0. [Disclaimer and known issues](#disclaimer-and-known-issues)
+0. [Models](#models)
 0. [Results](#results)
-0. [Download](#downloads)
-0. [Third-party Re-implementations](#third-party-re-implementations)
+0. [Third-party re-implementations](#third-party-re-implementations)
 
 ### Introduction
 
@@ -24,19 +24,32 @@ If you use these models in your research, please cite:
 		year = {2015}
 	}
 
-### Disclaimer and Known Issues
+### Disclaimer and known issues
 
-0. These models are converted from our own implementation to a recent version of Caffe. There might be numerical differences.
+0. These models are converted from our own implementation to a recent version of Caffe (2016/2/3, b590f1d). The numerical results using this code are as in the tables below.
 0. These models are for the usage of testing or fine-tuning.
 0. These models were **not** trained using this version of Caffe.
 0. If you want to train these models using this version of Caffe without modifications, please notice that:
 	- GPU memory might be insufficient for extremely deep models.
-	- Implementation of data augmentation might be different (see our paper about the data augmentation we used).
 	- Changes of mini-batch size should impact accuracy (we use a mini-batch of 256 images on 8 GPUs, that is, 32 images per GPU).
-0. In our BN layers, the provided mean and variance are strictly computed using average (**not** moving average) on a sufficiently large training batch after the training procedure. Using moving average might lead to different results.
+	- Implementation of data augmentation might be different (see our paper about the data augmentation we used).	
+	- There might be some other untested issues.
+0. In our BN layers, the provided mean and variance are strictly computed using average (**not** moving average) on a sufficiently large training batch after the training procedure. The numerical results are very stable (variation of val error < 0.1%). Using moving average might lead to different results. 
 0. In the BN paper, the BN layer learns gamma/beta. To implement BN in this version of Caffe, we use its provided "batch_norm_layer" (which has no gamma/beta learned) followed by "scale_layer" (which learns gamma/beta).
 0. We use Caffe's implementation of SGD: W := momentum\*W + lr\*g. **If you want to port these models to other libraries (e.g., Torch), please pay careful attention to the possibly different implementation of SGD**: W := momentum\*W + (1-momentum)\*lr\*g, which changes the effective learning rates.
+
 	
+### Models
+
+0. Visualizations of network structures:
+	- [ResNet-50] (http://ethereon.github.io/netscope/#/gist/db945b393d40bfa26006)
+	- [ResNet-101] (http://ethereon.github.io/netscope/#/gist/b21e2aae116dc1ac7b50)
+	- [ResNet-152] (http://ethereon.github.io/netscope/#/gist/d38f3e6091952b45198b)
+
+0. Model files:
+	- MSR download: [link] (http://research.microsoft.com/en-us/um/people/kahe/resnet/models.zip)
+	- OneDrive download: [link](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
+
 ### Results
 
 0. 1-crop validation error on ImageNet (center 224x224 crop from resized image with shorter side=256):
@@ -56,12 +69,7 @@ If you use these models in your research, please cite:
 	ResNet-101|21.8%|6.1%
 	ResNet-152|21.4%|5.7%
 	
-### Downloads
-
-- [OneDrive](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
-- [BaiduYun](http://pan.baidu.com/s/1o7xQ8Ka)
-	
-### Third-party Re-implementations
+### Third-party re-implementations
 
 Deep residual networks are very easy to implement and train. We recommend to see also the following third-party re-implementations and extensions:
 
