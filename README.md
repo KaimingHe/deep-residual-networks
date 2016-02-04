@@ -32,7 +32,8 @@ If you use these models in your research, please cite:
 0. If you want to train these models using this version of Caffe without modifications, please notice that:
 	- GPU memory might be insufficient for extremely deep models.
 	- Changes of mini-batch size should impact accuracy (we use a mini-batch of 256 images on 8 GPUs, that is, 32 images per GPU).
-	- Implementation of data augmentation might be different (see our paper about the data augmentation we used).	
+	- Implementation of data augmentation might be different (see our paper about the data augmentation we used).
+	- We randomly shuffle data at the beginning of every epoch.
 	- There might be some other untested issues.
 0. In our BN layers, the provided mean and variance are strictly computed using average (**not** moving average) on a sufficiently large training batch after the training procedure. The numerical results are very stable (variation of val error < 0.1%). Using moving average might lead to different results. 
 0. In the BN paper, the BN layer learns gamma/beta. To implement BN in this version of Caffe, we use its provided "batch_norm_layer" (which has no gamma/beta learned) followed by "scale_layer" (which learns gamma/beta).
