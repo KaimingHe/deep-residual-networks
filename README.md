@@ -15,6 +15,8 @@ Microsoft Research Asia (MSRA).
 
 This repository contains the original models (ResNet-50, ResNet-101, and ResNet-152) described in the paper "Deep Residual Learning for Image Recognition" (http://arxiv.org/abs/1512.03385). These models are those used in [ILSVRC] (http://image-net.org/challenges/LSVRC/2015/) and [COCO](http://mscoco.org/dataset/#detections-challenge2015) 2015 competitions, which won the 1st places in: ImageNet classification, ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.
 
+**Note** - Check re-implementations with **training code** and models from Facebook AI Research (FAIR)! -- [blog](http://torch.ch/blog/2016/02/04/resnets.html), [code](https://github.com/facebook/fb.resnet.torch)
+
 If you use these models in your research, please cite:
 
 	@article{He2015,
@@ -74,6 +76,8 @@ If you use these models in your research, please cite:
 
 Deep residual networks are very easy to implement and train. We recommend to see also the following third-party re-implementations and extensions:
 
+0. By Facebook AI Research (FAIR), with **training code** in Torch and pre-trained ResNet-18/34/50/101 models for ImageNet ([blog](http://torch.ch/blog/2016/02/04/resnets.html)):
+	https://github.com/facebook/fb.resnet.torch
 0. Torch, CIFAR-10, with ResNet-20 to ResNet-110:  
 	https://github.com/gcr/torch-residual-networks
 0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56:  
