@@ -81,4 +81,6 @@ Deep residual networks are very easy to implement and train. We recommend to see
 0. Torch, CIFAR-10, with ResNet-20 to ResNet-110:  
 	https://github.com/gcr/torch-residual-networks
 0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56:  
-	https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning 
+	https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning
+0. Neon, CIFAR-10, with ResNet-56:
+	https://github.com/apark263/cfmz
