@@ -86,3 +86,5 @@ Deep residual networks are very easy to implement and train. We recommend to see
 	https://github.com/apark263/cfmz
 0. Torch, MNIST, 100 layers ([blog](https://deepmlblog.wordpress.com/2016/01/05/residual-networks-in-torch-mnist/)):
 	https://github.com/arunpatala/residual.mnist
+0. A winning entry in Kaggle's right whale recognition challenge ([blog](http://blog.kaggle.com/2016/02/04/noaa-right-whale-recognition-winners-interview-2nd-place-felix-lau/)):
+	https://github.com/felixlaumon/kaggle-right-whale
