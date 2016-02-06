@@ -84,3 +84,5 @@ Deep residual networks are very easy to implement and train. We recommend to see
 	https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning
 0. Neon, CIFAR-10, with pre-trained ResNet-32 to ResNet-110 models, training code, and curves:
 	https://github.com/apark263/cfmz
+0. Torch, MNIST, 100 layers ([blog](https://deepmlblog.wordpress.com/2016/01/05/residual-networks-in-torch-mnist/)):
+	https://github.com/arunpatala/residual.mnist
