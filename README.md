@@ -76,11 +76,11 @@ If you use these models in your research, please cite:
 
 Deep residual networks are very easy to implement and train. We recommend to see also the following third-party re-implementations and extensions:
 
-0. By Facebook AI Research (FAIR), with **training code** in Torch and pre-trained ResNet-18/34/50/101 models for ImageNet ([blog](http://torch.ch/blog/2016/02/04/resnets.html)):
+0. By Facebook AI Research (FAIR), with **training code in Torch and pre-trained ResNet-18/34/50/101 models for ImageNet** ([blog](http://torch.ch/blog/2016/02/04/resnets.html)):
 	https://github.com/facebook/fb.resnet.torch
-0. Torch, CIFAR-10, with ResNet-20 to ResNet-110:  
+0. Torch, CIFAR-10, with ResNet-20 to ResNet-110, training code, and curves:  
 	https://github.com/gcr/torch-residual-networks
-0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56:  
+0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56 and training code:  
 	https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning
-0. Neon, CIFAR-10, with pre-trained ResNet-32 to Resnet-110 models and training code:
+0. Neon, CIFAR-10, with pre-trained ResNet-32 to ResNet-110 models, training code, and curves:
 	https://github.com/apark263/cfmz
