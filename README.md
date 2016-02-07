@@ -39,7 +39,7 @@ If you use these models in your research, please cite:
 	- There might be some other untested issues.
 0. In our BN layers, the provided mean and variance are strictly computed using average (**not** moving average) on a sufficiently large training batch after the training procedure. The numerical results are very stable (variation of val error < 0.1%). Using moving average might lead to different results. 
 0. In the BN paper, the BN layer learns gamma/beta. To implement BN in this version of Caffe, we use its provided "batch_norm_layer" (which has no gamma/beta learned) followed by "scale_layer" (which learns gamma/beta).
-0. We use Caffe's implementation of SGD: W := momentum\*W + lr\*g. **If you want to port these models to other libraries (e.g., Torch), please pay careful attention to the possibly different implementation of SGD**: W := momentum\*W + (1-momentum)\*lr\*g, which changes the effective learning rates.
+0. We use Caffe's implementation of SGD with momentum: v := momentum\*v + lr\*g. **If you want to port these models to other libraries (e.g., Torch, CNTK), please pay careful attention to the possibly different implementation of SGD with momentum**: v := momentum\*v + (1-momentum)\*lr\*g, which changes the effective learning rates.
 
 	
 ### Models
