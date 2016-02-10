@@ -88,3 +88,5 @@ Deep residual networks are very easy to implement and train. We recommend to see
 	https://github.com/arunpatala/residual.mnist
 0. A winning entry in Kaggle's right whale recognition challenge ([blog](http://blog.kaggle.com/2016/02/04/noaa-right-whale-recognition-winners-interview-2nd-place-felix-lau/)):
 	https://github.com/felixlaumon/kaggle-right-whale
+0. Neon, Place2 (mini), 40 layers ([blog](http://www.nervanasys.com/using-neon-for-scene-recognition-mini-places2/)):
+	https://github.com/hunterlang/mpmz/
