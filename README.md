@@ -54,6 +54,8 @@ If you use these models in your research, please cite:
 	- OneDrive download: [link](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
 
 ### Results
+0. Curves on ImageNet (solid lines: 1-crop val error; dashed lines: training error):
+	![Training curves](https://cloud.githubusercontent.com/assets/11435359/13046277/e904c04c-d412-11e5-9260-efc5b8301e2f.jpg)
 
 0. 1-crop validation error on ImageNet (center 224x224 crop from resized image with shorter side=256):
 
@@ -76,17 +78,10 @@ If you use these models in your research, please cite:
 
 Deep residual networks are very easy to implement and train. We recommend to see also the following third-party re-implementations and extensions:
 
-0. By Facebook AI Research (FAIR), with **training code in Torch and pre-trained ResNet-18/34/50/101 models for ImageNet** ([blog](http://torch.ch/blog/2016/02/04/resnets.html)):
-	https://github.com/facebook/fb.resnet.torch
-0. Torch, CIFAR-10, with ResNet-20 to ResNet-110, training code, and curves:  
-	https://github.com/gcr/torch-residual-networks
-0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56 and training code:  
-	https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning
-0. Neon, CIFAR-10, with pre-trained ResNet-32 to ResNet-110 models, training code, and curves:
-	https://github.com/apark263/cfmz
-0. Torch, MNIST, 100 layers ([blog](https://deepmlblog.wordpress.com/2016/01/05/residual-networks-in-torch-mnist/)):
-	https://github.com/arunpatala/residual.mnist
-0. A winning entry in Kaggle's right whale recognition challenge ([blog](http://blog.kaggle.com/2016/02/04/noaa-right-whale-recognition-winners-interview-2nd-place-felix-lau/)):
-	https://github.com/felixlaumon/kaggle-right-whale
-0. Neon, Place2 (mini), 40 layers ([blog](http://www.nervanasys.com/using-neon-for-scene-recognition-mini-places2/)):
-	https://github.com/hunterlang/mpmz/
+0. By Facebook AI Research (FAIR), with **training code in Torch and pre-trained ResNet-18/34/50/101 models for ImageNet**: [blog](http://torch.ch/blog/2016/02/04/resnets.html), [code](https://github.com/facebook/fb.resnet.torch)
+0. Torch, CIFAR-10, with ResNet-20 to ResNet-110, training code, and curves: [code](https://github.com/gcr/torch-residual-networks)
+0. Lasagne, CIFAR-10, with ResNet-32 and ResNet-56 and training code: [code](https://github.com/Lasagne/Recipes/tree/master/papers/deep_residual_learning)
+0. Neon, CIFAR-10, with pre-trained ResNet-32 to ResNet-110 models, training code, and curves: [code](https://github.com/apark263/cfmz)
+0. Torch, MNIST, 100 layers: [blog](https://deepmlblog.wordpress.com/2016/01/05/residual-networks-in-torch-mnist/), [code](https://github.com/arunpatala/residual.mnist)
+0. A winning entry in Kaggle's right whale recognition challenge: [blog](http://blog.kaggle.com/2016/02/04/noaa-right-whale-recognition-winners-interview-2nd-place-felix-lau/), [code](https://github.com/felixlaumon/kaggle-right-whale)
+0. Neon, Place2 (mini), 40 layers: [blog](http://www.nervanasys.com/using-neon-for-scene-recognition-mini-places2/), [code](https://github.com/hunterlang/mpmz/)
