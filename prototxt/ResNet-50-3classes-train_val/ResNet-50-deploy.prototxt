@@ -2302,17 +2302,7 @@ layer {
 }
 
 layer {
-  name: "drop"
-  type: "Dropout"
-  bottom: "pool5"
-  top: "drop"
-  dropout_param {
-    dropout_ratio: 0.5
-  }
-}
-
-layer {
-	bottom: "drop"
+	bottom: "pool5"
 	top: "fc3"
 	name: "fc3"
 	type: "InnerProduct"
