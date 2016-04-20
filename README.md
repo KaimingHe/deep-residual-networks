@@ -95,5 +95,5 @@ Deep residual networks are very easy to implement and train. We recommend to see
 
 Converters:
 
-0. MatConvNet: [url](http://www.vlfeat.org/matconvnet/pretrained/)
+0. MatConvNet: [url](http://www.vlfeat.org/matconvnet/pretrained/#imagenet-ilsvrc-classification)
 0. TensorFlow: [url](https://github.com/ry/tensorflow-resnet)
