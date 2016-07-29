@@ -56,7 +56,7 @@ If you use these models in your research, please cite:
 	- [ResNet-152] (http://ethereon.github.io/netscope/#/gist/d38f3e6091952b45198b)
 
 0. Model files:
-	- MSR download: [link] (http://research.microsoft.com/en-us/um/people/kahe/resnet/models.zip)
+	- ~~MSR download: [link] (http://research.microsoft.com/en-us/um/people/kahe/resnet/models.zip)~~
 	- OneDrive download: [link](https://onedrive.live.com/?authkey=%21AAFW2-FVoxeVRck&id=4006CBB8476FF777%2117887&cid=4006CBB8476FF777)
 
 ### Results
