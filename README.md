@@ -96,6 +96,7 @@ Deep residual networks are very easy to implement and train. We recommend to see
 [code](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/ResNet)
 0. MatConvNet, reproducing CIFAR-10 and ImageNet experiments (supporting official MatConvNet), training code and curves: [blog](https://zhanghang1989.github.io/ResNet/), [code](https://github.com/zhanghang1989/ResNet-Matconvnet)
 0. Keras, ResNet-50: [code](https://github.com/raghakot/keras-resnet)
+0. Caffe, [resnets described in paper with some tweaked architectures.](https://github.com/jay-mahadeokar/pynetbuilder), generated using using [pynetbuilder](https://github.com/jay-mahadeokar/pynetbuilder), a python tool for generating caffe networks. Also available: [object detection with resnet and SSD](https://github.com/jay-mahadeokar/pynetbuilder/tree/master/models/voc2007_ssd)
 
 Converters:
 
