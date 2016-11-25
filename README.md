@@ -92,7 +92,7 @@ Deep residual networks are very easy to implement and train. We recommend to see
 0. A winning entry in Kaggle's right whale recognition challenge: [blog](http://blog.kaggle.com/2016/02/04/noaa-right-whale-recognition-winners-interview-2nd-place-felix-lau/), [code](https://github.com/felixlaumon/kaggle-right-whale)
 0. Neon, Place2 (mini), 40 layers: [blog](http://www.nervanasys.com/using-neon-for-scene-recognition-mini-places2/), [code](https://github.com/hunterlang/mpmz/)
 0. MatConvNet, CIFAR-10, with ResNet-20 to ResNet-110, training code, and curves: [code](https://github.com/suhangpro/matresnet)
-0. TensorFlow, CIFAR-10, with ResNet-32,110,182 training code and curves:
+0. TensorFlow, with training code/curve and pre-trained ResNet-18/34/50/101 models for ImageNet:
 [code](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/ResNet)
 0. MatConvNet, reproducing CIFAR-10 and ImageNet experiments (supporting official MatConvNet), training code and curves: [blog](https://zhanghang1989.github.io/ResNet/), [code](https://github.com/zhanghang1989/ResNet-Matconvnet)
 0. Keras, ResNet-50: [code](https://github.com/raghakot/keras-resnet)
