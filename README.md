@@ -96,6 +96,7 @@ Deep residual networks are very easy to implement and train. We recommend to see
 [code](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/ResNet)
 0. MatConvNet, reproducing CIFAR-10 and ImageNet experiments (supporting official MatConvNet), training code and curves: [blog](https://zhanghang1989.github.io/ResNet/), [code](https://github.com/zhanghang1989/ResNet-Matconvnet)
 0. Keras, ResNet-50: [code](https://github.com/raghakot/keras-resnet)
+0. Caffe, reproducing ImageNet experiments, with training code and generation script, [code](https://github.com/cvjena/cnn-models)
 
 Converters:
 
